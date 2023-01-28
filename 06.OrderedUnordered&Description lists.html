@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>HTML Ordered Unordered and Description lists</title>
+	<style>
+	
+	.languages-list {
+	font-family: Arial;
+	font-size: 32px;
+	font-weight: bold;
+	font-style: italic;
+	float: center; /*positioning the entire object to the right */
+	text-align:center; /*positioning the text in the object to the left*/
+	color:red;
+	background-color: red;
+	border-color: blue;
+	border-style: solid;
+	border-width: 3px;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 60px;
+	margin-left: 10px;
+	padding-left: 80px;
+	transition: opacity 1s;
+	transition: background-color 0.5s,
+	 color: 1s;
+	height: 260px; /* these all are CSS properties and their values */
+	width: 260px; /* 150px is a value of the width property */ 
+	box-shadow: 10px 10px 15px red;	
+	}
+	
+	.languages-list:hover { /* this is pseudo class, targeting behavior of button when it's hovered */
+	opacity: 0.6;	
+	}
+	.languages-list:active { /*when the button is pressed */
+	background-color: green;	
+	}
+
+	div.container-1 {
+	text-align: center;
+	float: center;
+	}
+	
+	.other-languages {
+	font-size: 20px;
+	padding-right: 20px;
+	border-style: solid;
+	border-width: 3px;
+	display: inline-block;
+	float: center;
+	text-align: center;
+	}	
+
+	</style>
+
+	
+</head>
+
+<body>
+<h2><center>GeeksforGeeks</center></h2>
+<h4><center>HTML Unordered lists</center></h4>
+<h4>Coding language</h4>
+
+<ul style="list-style-type:square;"><!--circle; square, upper roman, lower-alpha; armenian;
+hebrew; none-->
+	<li> C#</li>
+	<li> Rubby</li>
+	<li> Go</li>
+	<li> Python</li>
+	<li> Visual Basic</li> 
+</ul>
+<hr>
+
+<h4><center>HTML Unordered list with effects</center></h4>
+<ul class = "languages-list";>
+	<li> <u>C#</u></li>
+	<li> Rubby</li>
+	<li> Go</li>
+	<li> Python</li>
+	<li> Visual Basic</li> 
+
+</ul>
+<br>
+<hr>
+<h4><center>HTML Ordered lists</center></h4>
+
+<div class = "container-1">
+<ol type="1"; start="11"; class = "other-languages";>
+	<li> Java Script</li>
+	<li> Java</li>
+	<li> CSS</li>
+	<li> C</li>
+	<li> C++</li> 
+</ol>
+</div>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>04 Chrome Dev Tools & CSS Box Model</title>
+
+<style>
+	
+	/* .subscribe-button here is a CSS selector i.e. which element we are targeting */
+	/* bachground color is called CSS property */
+	/* red is called the value of CSS property */	
+	
+	.subscribe-button { 
+	background-color: red;
+	color: white;
+	border: none;
+	height: 50px; /* these all are CSS properties and their values */
+	width: 150px; /* 150px is a value of the width property */
+	border-radius: 7px;
+	cursor: all-scroll;
+	margin-top: 20px;
+	margin-left: 50px;
+	transition: opacity 2s;
+	box-shadow: 10px 10px 15px red;
+	padding-left: 50px; /*using paddings is the better alternative than using height and width of button */
+	padding-right: 3px;
+	vertical-align: top;
+	}
+
+	.subscribe-button:hover { /* this is pseudo class, targeting behavior of button when it's hovered */
+	opacity: 0.3;	
+	}
+	.subscribe-button:active { /*when the button is pressed */
+	background-color: blue;	
+	}
+	
+	.join-button {
+	background-color: white;
+	font-size: 28px;
+	border-color: blue;
+	border-style: solid;
+	border-width: 2px;
+	color: blue;
+	height: 60px;
+	width: 200px;
+	border-radius: 6px;
+	cursor: grabbing;
+	margin-top: 20px;
+	margin-left: 25px;
+	transition: opacity 1s;
+	transition: background-color 0.75s,
+	 color: 1s; 	
+	} 
+
+	.join-button:hover { /* this is pseudo class, targeting behavior of button when is hovered */
+	background-color: blue;
+	opacity: 0.7; /*takes values between 0 and 1 and fades the hover color down to 70%*/
+	color: white;	
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.70);
+	font-family:"Lucida Console";
+	}
+	.join-button:active { /*when the button is pressed */
+	opacity: 0.3;	
+	
+	}
+	
+	.tweet-button {
+	background-color: blue;
+	border-color: green;
+	border-style: dashed;
+	border-width: 3px;
+	color: white;
+	font-size: 32px;
+	height: 60px;
+	width: 200px;
+	border-radius: 30px;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-left: 25px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.70);
+/* shadow behind, 10px horizontal, 10px vertical, the final parameter is the color of the shadow */    
+	/* in rgba - 'a' means the value of opacity that the color apears (how see through it)*/
+	} 
+
+
+	.clear-button {
+	float: right; /*positioning the entire button to the right */
+	text-align:left; /*positioning the text in button to the left*/
+	background-color: orange;
+	border-color: red;
+	border-style: solid;
+	border-width: 6px;
+	color: green;
+	font-size: 20px;
+	height: 45px;
+	width: 350px;
+	border-radius: 10px;
+	cursor: progress;
+	margin-top: 20px;
+	margin-left: 25px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.70);
+/* shadow behind, 10px horizontal, 10px vertical, the final parameter is the color of the shadow */    
+	/* in rgba - 'a' means the value of opacity that the color apears (how see through it)*/
+	} 
+</style>
+
+
+<body>
+<button class = "subscribe-button">
+	SUBSCRIBE
+</button>
+<br><hr>
+<center><button class = "join-button">
+	JOIN
+</button></center>
+<br>
+<center><button class = "tweet-button">
+	Tweet
+</button></center>
+<br>
+
+<button class = "clear-button">
+	Clear All
+</button>
+
+
+</body>
+</html>
+
+
+
+
